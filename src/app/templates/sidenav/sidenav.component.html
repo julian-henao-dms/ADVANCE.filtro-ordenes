@@ -1,0 +1,88 @@
+<mat-toolbar class="mat-elevation-z8">
+    <div class="container-toolbar">
+        <div class="title-toolbar-app">
+            <button mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
+        <mat-icon *ngIf="!sidenav.opened">
+            menu
+        </mat-icon>
+        <mat-icon *ngIf="sidenav.opened">
+            close
+        </mat-icon>
+    </button>
+            <div class="container-logo">
+                <img class="logo-app" src="./assets/images/logo-advance.png" alt="Logo Advance">
+            </div>
+        </div>
+        <div class="buttons-toolbar">
+            <div class="example-button-container">
+                <button matTooltip="Mensaje tooltip" mat-mini-fab color="primary" aria-label="Example icon button with a menu icon">
+                    <mat-icon>filter_list</mat-icon>
+                  </button>
+            </div>
+            <div class="example-button-container">
+                <button matTooltip="Mensaje tooltip" mat-mini-fab color="primary" aria-label="Example icon button with a menu icon">
+                    <mat-icon>home</mat-icon>
+                  </button>
+            </div>
+        </div>
+    </div>
+
+
+</mat-toolbar>
+
+<mat-sidenav-container>
+    <mat-sidenav #drawer #sidenav="matSidenav" class="sidenav sidenav-dms mat-elevation-z8">
+        <div class="container-nav">
+            <div class="header-nav">
+                <div class="buscador-placa">
+                    <mat-form-field class="search-field">
+                        <mat-label>Buscar Placa</mat-label>
+                        <input matInput type="text" [(ngModel)]="value">
+                        <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+                          <mat-icon>close</mat-icon>
+                        </button>
+                    </mat-form-field>
+                    <button mat-raised-button color="primary">Primary</button>
+                </div>
+            </div>
+
+            <div class="main-nav">
+                <mat-nav-list class="nav-dms">
+                    <a class="item-menu-dms simple-item" mat-list-item href="#" routerLink="/home" (click)="closeSideNav()">
+                        <mat-icon class="mat-icon-dms">directions_car</mat-icon>PFGHS20858</a>
+                    <a class="item-menu-dms simple-item" mat-list-item href="#" routerLink="/home" (click)="closeSideNav()">
+                        <mat-icon class="mat-icon-dms">directions_car</mat-icon>PFGHS20858</a>
+                    <a class="item-menu-dms simple-item" mat-list-item href="#" routerLink="/home" (click)="closeSideNav()">
+                        <mat-icon class="mat-icon-dms">directions_car</mat-icon>PFGHS20858</a>
+                    <a class="item-menu-dms simple-item" mat-list-item href="#" routerLink="/home" (click)="closeSideNav()">
+                        <mat-icon class="mat-icon-dms">directions_car</mat-icon>PFGHS20858</a>
+                    <a class="item-menu-dms simple-item" mat-list-item href="#" routerLink="/home" (click)="closeSideNav()">
+                        <mat-icon class="mat-icon-dms">directions_car</mat-icon>PFGHS20858</a>
+                    <a class="item-menu-dms simple-item" mat-list-item href="#" routerLink="/home" (click)="closeSideNav()">
+                        <mat-icon class="mat-icon-dms">directions_car</mat-icon>PFGHS20858</a>
+                    <a class="item-menu-dms simple-item" mat-list-item href="#" routerLink="/home" (click)="closeSideNav()">
+                        <mat-icon class="mat-icon-dms">directions_car</mat-icon>PFGHS20858</a>
+                    <a class="item-menu-dms simple-item" mat-list-item href="#" routerLink="/home" (click)="closeSideNav()">
+                        <mat-icon class="mat-icon-dms">directions_car</mat-icon>PFGHS20858</a>
+                    <a class="item-menu-dms simple-item" mat-list-item href="#" routerLink="/home" (click)="closeSideNav()">
+                        <mat-icon class="mat-icon-dms">directions_car</mat-icon>PFGHS20858</a>
+                    <a class="item-menu-dms simple-item" mat-list-item href="#" routerLink="/home" (click)="closeSideNav()">
+                        <mat-icon class="mat-icon-dms">directions_car</mat-icon>PFGHS20858</a>
+
+                </mat-nav-list>
+
+
+            </div>
+
+
+            <div class="footer-nav">
+                <p class="foot-text">powered by DMS®</p>
+            </div>
+        </div>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div class="content mat-elevation-z8">
+            <router-outlet></router-outlet>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>
