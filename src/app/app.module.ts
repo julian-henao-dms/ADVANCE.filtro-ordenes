@@ -5,6 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SidenavComponent } from './templates/sidenav/sidenav.component';
+import { InformacionClienteComponent } from './components/informacion-cliente/informacion-cliente.component';
+import { DatosClienteComponent } from './components/datos-cliente/datos-cliente.component';
+import { DatosVehiculoComponent } from './components/datos-vehiculo/datos-vehiculo.component';
+import { TablaDescripcionServicioComponent } from './components/tabla-descripcion-servicio/tabla-descripcion-servicio.component';
+import { HomeComponent } from './components/home/home.component';
+
 
 // Material
 
@@ -23,12 +30,19 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { MatNativeDateModule } from '@angular/material/core';
-import { SidenavComponent } from './templates/sidenav/sidenav.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatGridListModule } from '@angular/material/grid-list';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    SidenavComponent
+    SidenavComponent,
+    InformacionClienteComponent,
+    DatosClienteComponent,
+    DatosVehiculoComponent,
+    TablaDescripcionServicioComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
@@ -51,6 +65,8 @@ import { SidenavComponent } from './templates/sidenav/sidenav.component';
     MatNativeDateModule,
     ReactiveFormsModule,
     MatCardModule,
+    MatTableModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

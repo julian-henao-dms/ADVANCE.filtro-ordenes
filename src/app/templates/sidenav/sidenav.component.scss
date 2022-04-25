@@ -5,6 +5,7 @@ $hover-simple-item: #2e2e8e;
 mat-toolbar {
     background: #fff;
     color: #2675bb;
+    margin-bottom: 5px;
 }
 
 .logo-app {
@@ -35,19 +36,20 @@ mat-toolbar {
 }
 
 .content {
-    height: calc(100vh - 75px);
+    padding-left: 5px;
+    // height: calc(100vh - 75px);
     margin: 5px;
-    margin-left: 10px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    overflow-y: auto;
-    align-items: center;
-    color: lightgray;
+    // margin-left: 10px;
+    // display: flex;
+    // justify-content: center;
+    // flex-wrap: wrap;
+    // overflow-y: auto;
+    // align-items: center;
+    // color: lightgray;
 }
 
 mat-sidenav-container {
-    height: calc(100vh - 65px);
+    height: calc(100vh - 69px);
 }
 
 mat-panel-title {
