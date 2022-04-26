@@ -1,0 +1,16 @@
+mat-card.datos-cliente {
+    margin-bottom: 0.8em;
+    .nombre-cliente {
+        font-size: 15px;
+        font-weight: 600;
+        color: #1c1c6e;
+        margin-bottom: 0;
+    }
+    .direccion {
+        font-size: 14px;
+        margin-bottom: 0
+    }
+    .correo {
+        margin-bottom: 0.3em;
+    }
+}

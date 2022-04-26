@@ -32,6 +32,9 @@ import { MatCardModule } from '@angular/material/card';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatTableModule } from '@angular/material/table';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatSelectModule } from '@angular/material/select';
+
 
 
 @NgModule({
@@ -66,7 +69,9 @@ import { MatGridListModule } from '@angular/material/grid-list';
     ReactiveFormsModule,
     MatCardModule,
     MatTableModule,
-    MatGridListModule
+    MatGridListModule,
+    MatDialogModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

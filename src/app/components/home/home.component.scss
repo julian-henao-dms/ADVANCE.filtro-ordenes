@@ -9,6 +9,21 @@ mat-card {
     margin-bottom: 0.8em;
 }
 
+.filtro-orden-taller mat-expansion-panel {
+    margin-bottom: 0.8em;
+}
+
+.filtro-orden-taller mat-icon {
+    margin-right: 0.8em;
+}
+
+.filtro-orden-taller mat-panel-title {
+    color: #1c1c6e;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
 ::-webkit-scrollbar-thumb {
     background: #1c1c6e;
     border-radius: 4px;
@@ -22,12 +37,21 @@ mat-card {
     border-radius: 4px;
 }
 
+.example-form-field {
+    margin-right: 20px;
+}
+
+.content-left-cards.a {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
 @media (min-width: 800px) {
     .grid-container {
         display: grid;
         grid-gap: 1%;
-        grid-template-columns: [col1-start] 48% [col2-start] 48%;
-        grid-template-rows: [row1-start] auto [row2-start] auto [row3-start] auto [row3-end];
+        grid-template-columns: [col1-start] 44% [col2-start] 54%;
+        grid-template-rows: [row1-start] 500px [row2-start] auto [row3-start] auto [row3-end];
         color: #444;
         // height: calc(100vh - 70px);
     }

@@ -1,15 +1,21 @@
-<table mat-table [dataSource]="transactions" class="mat-elevation-z8">
+<table mat-table [dataSource]="detalles" class="mat-elevation-z8">
     <!-- Item Column -->
-    <ng-container matColumnDef="item">
-        <th mat-header-cell *matHeaderCellDef> Item </th>
-        <td mat-cell *matCellDef="let transaction"> {{transaction.item}} </td>
-        <td mat-footer-cell *matFooterCellDef> Total </td>
+    <ng-container matColumnDef="descripcion">
+        <th mat-header-cell *matHeaderCellDef> Descripción </th>
+        <td mat-cell *matCellDef="let detalles"> {{detalles.descripcion}} </td>
+        <td mat-footer-cell *matFooterCellDef> </td>
     </ng-container>
 
     <!-- Cost Column -->
-    <ng-container matColumnDef="cost">
-        <th mat-header-cell *matHeaderCellDef> Cost </th>
-        <td mat-cell *matCellDef="let transaction"> {{transaction.cost | currency}} </td>
+    <ng-container matColumnDef="cantidad">
+        <th mat-header-cell *matHeaderCellDef> Cantidad </th>
+        <td mat-cell *matCellDef="let detalles"> {{detalles.cantidad}} </td>
+        <td mat-footer-cell *matFooterCellDef> Total </td>
+    </ng-container>
+    <!-- Cost Column -->
+    <ng-container matColumnDef="valor">
+        <th mat-header-cell *matHeaderCellDef> Valor </th>
+        <td mat-cell *matCellDef="let detalles"> {{detalles.valor | currency}} </td>
         <td mat-footer-cell *matFooterCellDef> {{getTotalCost() | currency}} </td>
     </ng-container>
 
