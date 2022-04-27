@@ -34,6 +34,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatSelectModule } from '@angular/material/select';
+import { FiltroOrdenesComponent } from './components/filtro-ordenes/filtro-ordenes.component';
 
 
 
@@ -46,6 +47,7 @@ import { MatSelectModule } from '@angular/material/select';
     DatosVehiculoComponent,
     TablaDescripcionServicioComponent,
     HomeComponent,
+    FiltroOrdenesComponent,
   ],
   imports: [
     BrowserModule,
