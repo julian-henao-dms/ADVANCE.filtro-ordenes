@@ -37,6 +37,7 @@ import { FiltroOrdenesComponent } from './components/filtro-ordenes/filtro-orden
 import { ModalDetalleOrdenComponent } from './templates/modal-detalle-orden/modal-detalle-orden.component';
 import { OrdenTallerComponent } from './components/orden-taller/orden-taller.component';
 import { TablaDetalleOrdenesTallerComponent } from './components/tabla-detalle-ordenes-taller/tabla-detalle-ordenes-taller.component';
+import { FiltroTOTALVEHICULOSComponent } from './components/filtro-total-vehiculos/filtro-total-vehiculos.component';
 
 
 
@@ -52,6 +53,7 @@ import { TablaDetalleOrdenesTallerComponent } from './components/tabla-detalle-o
     ModalDetalleOrdenComponent,
     OrdenTallerComponent,
     TablaDetalleOrdenesTallerComponent,
+    FiltroTOTALVEHICULOSComponent,
   ],
   imports: [
     BrowserModule,

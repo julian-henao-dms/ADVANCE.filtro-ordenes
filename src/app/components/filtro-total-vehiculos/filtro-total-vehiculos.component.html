@@ -1,0 +1,92 @@
+<mat-accordion class="filtro-total-vehiculos">
+    <mat-expansion-panel hideToggle>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                <mat-icon>
+                    manage_search
+                </mat-icon>
+                Total Vehículos Filtros
+            </mat-panel-title>
+
+        </mat-expansion-panel-header>
+        <div class="content-filter-total">
+            <div class="content-filtro-total">
+                <form action="">
+                    <div class="select-filtro-total">
+                        <mat-form-field>
+                            <mat-label>Estado Factura</mat-label>
+                            <mat-select>
+                                <mat-option>Ninguna</mat-option>
+                                <mat-option value="activa">Activa</mat-option>
+                                <mat-option value="fact-parcial">Facturación parcial</mat-option>
+                                <mat-option value="facturada">facturada</mat-option>
+                                <mat-option value="cerrada">Cerrada</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                        <button mat-raised-button color="primary" class="btn-filtro-orden" aria-label="Filtrar ">
+                            Filtrar 
+                              <mat-icon>
+                                today
+                               </mat-icon>
+                             </button>
+                    </div>
+                </form>
+            </div>
+            <div class="content-filtro-orden">
+                <form action="">
+                    <div class="select-filtro-total">
+                        <mat-form-field>
+                            <mat-label>Estado Factura</mat-label>
+                            <mat-select>
+                                <mat-option>Ninguna</mat-option>
+                                <mat-option value="activa">Activa</mat-option>
+                                <mat-option value="fact-parcial">Facturación parcial</mat-option>
+                                <mat-option value="facturada">facturada</mat-option>
+                                <mat-option value="cerrada">Cerrada</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                        <button mat-raised-button color="primary" class="btn-filtro-orden" aria-label="Filtrar ">
+                            Filtrar 
+                              <mat-icon>
+                                today
+                               </mat-icon>
+                             </button>
+                    </div>
+                </form>
+            </div>
+            <div class="content-filtro-orden">
+                <form>
+                    <div class="filtro-rango-fechas">
+                        <div class="pickers-filtro">
+                            <mat-form-field color="primary" appearance="fill">
+                                <mat-label>Inherited calendar color</mat-label>
+                                <input matInput [matDatepicker]="picker1">
+                                <mat-hint>MM/DD/YYYY</mat-hint>
+                                <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                                <mat-datepicker #picker1></mat-datepicker>
+                            </mat-form-field>
+
+                            <mat-form-field color="primary" appearance="fill">
+                                <mat-label>Custom calendar color</mat-label>
+                                <input matInput [matDatepicker]="picker2">
+                                <mat-hint>MM/DD/YYYY</mat-hint>
+                                <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                                <mat-datepicker #picker2 color="primary"></mat-datepicker>
+                            </mat-form-field>
+                        </div>
+                        <button mat-raised-button color="primary" class="btn-filtro-orden" aria-label="Filtrar ">
+                            Filtrar 
+                              <mat-icon>
+                                today
+                               </mat-icon>
+                             </button>
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+
+    </mat-expansion-panel>
+
+</mat-accordion>
