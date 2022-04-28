@@ -1,0 +1,16 @@
+<h1 class="title-modal" mat-dialog-title>
+
+    {{data.titulo}}</h1>
+<mat-dialog-content>
+    <div>
+
+        <app-datos-vehiculo></app-datos-vehiculo>
+        <app-orden-taller></app-orden-taller>
+        <app-tabla-detalle-ordenes-taller></app-tabla-detalle-ordenes-taller>
+    </div>
+
+</mat-dialog-content>
+<mat-dialog-actions>
+
+    <button class="mat-b-warning" mat-button mat-dialog-close mat-dialog-close="false">Cerrar</button>
+</mat-dialog-actions>

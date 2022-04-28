@@ -21,9 +21,13 @@ export class TablaDescripcionServicioComponent {
     {descripcion: 'Antena', cantidad: 1, valor: 25},
     {descripcion: 'Retrovisor', cantidad: 2, valor: 15},
   ];
+  constructor() { }
 
+  ngOnInit(): void {
+  }
   /** Gets the total cost of all transactions. */
   getTotalCost() {
     return this.detalles.map(d => d.valor).reduce((acc, value) => acc + value, 0);
   }
+
 }

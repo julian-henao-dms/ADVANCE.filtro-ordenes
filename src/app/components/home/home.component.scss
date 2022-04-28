@@ -5,10 +5,9 @@
     height: calc(100vh - 70px);
 }
 
-mat-card {
-    margin-bottom: 0.8em;
-}
-
+// mat-card {
+//     margin-bottom: 0.8em;
+// }
 .filtro-orden-taller mat-expansion-panel {
     margin-bottom: 0.8em;
 }
@@ -42,16 +41,56 @@ mat-card {
 }
 
 .content-left-cards.a {
-    overflow: scroll;
+    overflow: hidden;
     overflow-x: hidden;
 }
 
+.content-left-cards.a:hover {
+    overflow: auto;
+}
+
+.content-right-table.b {
+    width: 100%;
+}
+
+// detalle orden
+// .detalle-orden {
+//     list-style: none;
+// }
+// .detalle-orden li {
+//     display: flex;
+//     align-items: center;
+//     flex-wrap: nowrap;
+//     justify-content: flex-start;
+//     margin-bottom: 0.6em;
+// }
+// .detalle-orden li mat-icon {
+//     margin-right: 0.5em;
+// }
+// ------------------------------
+// datos vehiculo
+// h2.titulo-placa {
+//     font-size: 15px;
+//     font-weight: 600;
+//     color: #1c1c6e;
+//     margin-bottom: 0;
+// }
+// ------------------------------
+// div graficos
+.print-btn {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+//-------------------------------
 @media (min-width: 800px) {
     .grid-container {
         display: grid;
         grid-gap: 1%;
         grid-template-columns: [col1-start] 44% [col2-start] 54%;
-        grid-template-rows: [row1-start] 500px [row2-start] auto [row3-start] auto [row3-end];
+        grid-template-rows: [row1-start] 580px [row2-start] auto [row3-start] auto [row3-end];
         color: #444;
         // height: calc(100vh - 70px);
     }

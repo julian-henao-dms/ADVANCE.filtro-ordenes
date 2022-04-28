@@ -7,48 +7,34 @@
                 </mat-icon>
                 Filtrar Ordenes de Taller
             </mat-panel-title>
-            <mat-panel-description>
 
-            </mat-panel-description>
         </mat-expansion-panel-header>
         <div class="content-filter-orden">
             <div class="content-filtro-orden">
                 <form>
-                    <mat-form-field appearance="fill" class="example-form-field">
-                        <mat-label>Choose a date</mat-label>
-                        <input matInput [matDatepicker]="datepicker">
-                        <mat-hint>MM/DD/YYYY</mat-hint>
-                        <mat-datepicker-toggle matSuffix [for]="datepicker"></mat-datepicker-toggle>
-                        <mat-datepicker #datepicker>
-                            <mat-datepicker-actions>
-                                <button mat-button matDatepickerCancel>Cancel</button>
-                                <button mat-raised-button color="primary" matDatepickerApply>Apply</button>
-                            </mat-datepicker-actions>
-                        </mat-datepicker>
-                    </mat-form-field>
+                    <div class="rango-fecha">
+                        <mat-form-field color="accent" appearance="fill">
+                            <mat-label>Inherited calendar color</mat-label>
+                            <input matInput [matDatepicker]="picker1">
+                            <mat-hint>MM/DD/YYYY</mat-hint>
+                            <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                            <mat-datepicker #picker1></mat-datepicker>
+                        </mat-form-field>
 
-                    <mat-form-field appearance="fill" class="example-form-field">
-                        <mat-label>Enter a date range</mat-label>
-                        <mat-date-range-input [rangePicker]="rangePicker">
-                            <input matStartDate placeholder="Start date">
-                            <input matEndDate placeholder="End date">
-                        </mat-date-range-input>
-                        <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint>
-                        <mat-datepicker-toggle matSuffix [for]="rangePicker"></mat-datepicker-toggle>
-                        <mat-date-range-picker #rangePicker>
-                            <mat-date-range-picker-actions>
-                                <button mat-button matDateRangePickerCancel>Cancel</button>
-                                <button mat-raised-button color="primary" matDateRangePickerApply>Apply</button>
-                            </mat-date-range-picker-actions>
-                        </mat-date-range-picker>
-                    </mat-form-field>
-
-                    <button mat-raised-button color="primary" class="btn-filtro-orden" aria-label="Filtrar ">
-                        Filtrar 
-                          <mat-icon>
-                            today
-                           </mat-icon>
-                         </button>
+                        <mat-form-field color="accent" appearance="fill">
+                            <mat-label>Custom calendar color</mat-label>
+                            <input matInput [matDatepicker]="picker2">
+                            <mat-hint>MM/DD/YYYY</mat-hint>
+                            <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                            <mat-datepicker #picker2 color="primary"></mat-datepicker>
+                        </mat-form-field>
+                        <button mat-raised-button color="primary" class="btn-filtro-orden" aria-label="Filtrar ">
+                            Filtrar 
+                              <mat-icon>
+                                today
+                               </mat-icon>
+                             </button>
+                    </div>
                 </form>
             </div>
 
@@ -80,7 +66,7 @@
                             today
                            </mat-icon>
                          </button>
-                    <button mat-raised-button color="primary" class="btn-filtro-orden" primary aria-label="Filtrar ">
+                    <button (click)="openDialog()" mat-raised-button color="primary" class="btn-filtro-orden" primary aria-label="Filtrar ">
                             Filtrar 
                               <mat-icon>
                                 today

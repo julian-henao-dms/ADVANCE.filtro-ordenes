@@ -2,6 +2,10 @@
     margin-right: 20px;
 }
 
+mat-form-field {
+    margin-right: 12px;
+}
+
 .filtro-orden-taller mat-expansion-panel {
     margin-bottom: 0.8em;
 }
@@ -15,6 +19,7 @@
     font-size: 15px;
     font-weight: 600;
     text-transform: uppercase;
+    justify-content: center;
 }
 
 .mat-expansion-panel-content {
@@ -28,6 +33,13 @@ form.ng-untouched.ng-pristine.ng-valid {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.rango-fecha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .btns-filtro {

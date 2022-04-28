@@ -1,0 +1,23 @@
+table {
+    width: 100%;
+}
+
+tr.mat-footer-row {
+    font-weight: bold;
+}
+
+th.mat-header-cell {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #1c1c6e;
+    background: #fafafa;
+}
+
+td.mat-cell {
+    text-align: center;
+}
+
+td.mat-footer-cell {
+    text-align: center;
+}

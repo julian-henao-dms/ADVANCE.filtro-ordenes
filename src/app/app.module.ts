@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SidenavComponent } from './templates/sidenav/sidenav.component';
-import { InformacionClienteComponent } from './components/informacion-cliente/informacion-cliente.component';
 import { DatosClienteComponent } from './components/datos-cliente/datos-cliente.component';
 import { DatosVehiculoComponent } from './components/datos-vehiculo/datos-vehiculo.component';
 import { TablaDescripcionServicioComponent } from './components/tabla-descripcion-servicio/tabla-descripcion-servicio.component';
@@ -35,6 +34,9 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatSelectModule } from '@angular/material/select';
 import { FiltroOrdenesComponent } from './components/filtro-ordenes/filtro-ordenes.component';
+import { ModalDetalleOrdenComponent } from './templates/modal-detalle-orden/modal-detalle-orden.component';
+import { OrdenTallerComponent } from './components/orden-taller/orden-taller.component';
+import { TablaDetalleOrdenesTallerComponent } from './components/tabla-detalle-ordenes-taller/tabla-detalle-ordenes-taller.component';
 
 
 
@@ -42,12 +44,14 @@ import { FiltroOrdenesComponent } from './components/filtro-ordenes/filtro-orden
   declarations: [
     AppComponent,
     SidenavComponent,
-    InformacionClienteComponent,
     DatosClienteComponent,
     DatosVehiculoComponent,
     TablaDescripcionServicioComponent,
     HomeComponent,
     FiltroOrdenesComponent,
+    ModalDetalleOrdenComponent,
+    OrdenTallerComponent,
+    TablaDetalleOrdenesTallerComponent,
   ],
   imports: [
     BrowserModule,

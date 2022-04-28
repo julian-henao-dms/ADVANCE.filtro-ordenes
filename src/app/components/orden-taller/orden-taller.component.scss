@@ -1,0 +1,15 @@
+.detalle-orden {
+    list-style: none;
+}
+
+.detalle-orden li {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin-bottom: 0.6em;
+}
+
+.detalle-orden li mat-icon {
+    margin-right: 0.5em;
+}

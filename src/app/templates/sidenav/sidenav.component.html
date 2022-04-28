@@ -14,14 +14,10 @@
             </div>
         </div>
         <div class="buttons-toolbar">
+            <h1>Información de clientes por taller</h1>
             <div class="example-button-container">
                 <button matTooltip="Mensaje tooltip" mat-mini-fab color="primary" aria-label="Example icon button with a menu icon">
-                    <mat-icon>filter_list</mat-icon>
-                  </button>
-            </div>
-            <div class="example-button-container">
-                <button matTooltip="Mensaje tooltip" mat-mini-fab color="primary" aria-label="Example icon button with a menu icon">
-                    <mat-icon>home</mat-icon>
+                    <mat-icon>logout</mat-icon>
                   </button>
             </div>
         </div>
@@ -42,16 +38,15 @@
                           <mat-icon>close</mat-icon>
                         </button>
                     </mat-form-field>
-                    <button mat-raised-button color="primary">Primary</button>
+                    <button mat-raised-button class="btn-sidenav"><mat-icon>search</mat-icon>
+                        Buscar</button>
                 </div>
             </div>
 
             <div class="main-nav">
                 <mat-nav-list class="nav-dms">
                     <a class="item-menu-dms simple-item" mat-list-item href="#" routerLink="/home" (click)="closeSideNav()">
-                        <div class="placa-div">
-                            <div class="text-placa">C-321</div>
-                        </div>
+                        <mat-icon class="mat-icon-dms">directions_car</mat-icon>
                         PFGHS20858
                     </a>
                     <a class="item-menu-dms simple-item" mat-list-item href="#" routerLink="/home" (click)="closeSideNav()">
