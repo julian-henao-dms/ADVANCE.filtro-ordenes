@@ -19,7 +19,9 @@ export class FiltroOrdenesComponent implements OnInit {
     let dialogRef = this.dialog.open(ModalDetalleOrdenComponent, {
       data:{
 
-       }
+       },
+       width: '90%',
+      
     });
  
     dialogRef.afterClosed().subscribe(result => {

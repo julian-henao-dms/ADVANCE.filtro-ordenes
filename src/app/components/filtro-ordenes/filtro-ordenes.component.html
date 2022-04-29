@@ -28,11 +28,11 @@
                             <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
                             <mat-datepicker #picker2 color="primary"></mat-datepicker>
                         </mat-form-field>
-                        <button mat-raised-button color="primary" class="btn-filtro-orden" aria-label="Filtrar ">
-                            Filtrar 
-                              <mat-icon>
-                                today
+                        <button mat-raised-button class="btn-filtro-orden" aria-label="Filtrar ">
+                            <mat-icon>
+                                manage_search
                                </mat-icon>
+                               Filtrar 
                              </button>
                     </div>
                 </form>
@@ -50,27 +50,29 @@
                             <mat-option value="cerrada">Cerrada</mat-option>
                         </mat-select>
                     </mat-form-field>
-                    <button mat-raised-button color="primary" class="btn-filtro-orden" aria-label="Filtrar ">
-                        Filtrar 
-                          <mat-icon>
-                            today
+                    <button mat-raised-button class="btn-filtro-orden" aria-label="Filtrar ">
+                        <mat-icon>
+                            manage_search
                            </mat-icon>
+                           Filtrar 
                          </button>
                 </form>
             </div>
             <div class="content-filtro-orden">
                 <div class="btns-filtro">
-                    <button mat-raised-button color="primary" class="btn-filtro-orden" aria-label="Filtrar ">
-                        Filtrar 
-                          <mat-icon>
-                            today
+                    <button mat-raised-button class="btn-filtro-orden" aria-label="Filtrar ">
+                        <mat-icon>
+                            manage_search
                            </mat-icon>
+                           Filtrar 
+                        
                          </button>
-                    <button (click)="openDialog()" mat-raised-button color="primary" class="btn-filtro-orden" primary aria-label="Filtrar ">
-                            Filtrar 
-                              <mat-icon>
-                                today
-                               </mat-icon>
+                    <button (click)="openDialog()" mat-raised-button class="btn-filtro-orden" primary aria-label="Filtrar ">
+                        <mat-icon>
+                            manage_search
+                           </mat-icon>
+                           Filtrar 
+                        
                              </button>
 
                 </div>

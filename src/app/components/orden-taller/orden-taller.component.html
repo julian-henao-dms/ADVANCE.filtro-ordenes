@@ -1,9 +1,9 @@
-<mat-card>
+<mat-card class="card-orden-taller">
     <div class="orden-taller">
         <ul class="detalle-orden">
             <li>
                 <mat-icon>receipt_long</mat-icon>
-                <span>34159 - OT. 99.99. - ORDEN DE TALLER - Facturada</span>
+                <span>34159 - OT. 99.99. - ORDEN DE TALLER - <span class="estado-factura">Facturada</span></span>
             </li>
             <li>
                 <mat-icon>network_check</mat-icon>
@@ -30,7 +30,10 @@
         </ul>
     </div>
     <mat-card-actions>
-
-        <button mat-button>SHARE</button>
+        <mat-divider></mat-divider>
+        <div class="btn-orden-taller">
+            <button class="main-btn-ordenes" mat-button>
+                <mat-icon>list_alt</mat-icon> Ver más detalles</button>
+        </div>
     </mat-card-actions>
 </mat-card>

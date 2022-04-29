@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './filtro-total-vehiculos.component.html',
   styleUrls: ['./filtro-total-vehiculos.component.scss']
 })
-export class FiltroTOTALVEHICULOSComponent implements OnInit {
+export class FiltroTotalVehiculosComponent implements OnInit {
 
   constructor() { }
 

@@ -307,6 +307,16 @@ button.mat-focus-indicator.mat-mini-fab.mat-button-base.mat-primary {
     }
 }
 
+@media (max-width: 640px) {
+    .buttons-toolbar {
+        display: flex;
+        align-items: center;
+        h1 {
+            display: none;
+        }
+    }
+}
+
 @media (max-width: 480px) {
     .container-logo {
         width: calc(100% - 75px);

@@ -44,9 +44,21 @@ form.ng-untouched.ng-pristine.ng-valid {
 
 .btns-filtro {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-content: stretch;
-    align-items: stretch;
-    flex-wrap: wrap;
-    justify-content: space-around;
+}
+
+.btn-filtro-orden {
+    margin: 0.5em 0;
+    background-color: #2675bb;
+    color: white;
+}
+
+@media (max-width: 800) and (min-width: 1280px) {
+    form.ng-untouched.ng-pristine.ng-valid[_ngcontent-itg-c184] {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
 }

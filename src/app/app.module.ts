@@ -10,6 +10,12 @@ import { DatosClienteComponent } from './components/datos-cliente/datos-cliente.
 import { DatosVehiculoComponent } from './components/datos-vehiculo/datos-vehiculo.component';
 import { TablaDescripcionServicioComponent } from './components/tabla-descripcion-servicio/tabla-descripcion-servicio.component';
 import { HomeComponent } from './components/home/home.component';
+import { FiltroOrdenesComponent } from './components/filtro-ordenes/filtro-ordenes.component';
+import { ModalDetalleOrdenComponent } from './templates/modal-detalle-orden/modal-detalle-orden.component';
+import { OrdenTallerComponent } from './components/orden-taller/orden-taller.component';
+import { TablaDetalleOrdenesTallerComponent } from './components/tabla-detalle-ordenes-taller/tabla-detalle-ordenes-taller.component';
+import { FiltroTotalVehiculosComponent } from './components/filtro-total-vehiculos/filtro-total-vehiculos.component';
+
 
 
 // Material
@@ -33,11 +39,8 @@ import { MatTableModule } from '@angular/material/table';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatSelectModule } from '@angular/material/select';
-import { FiltroOrdenesComponent } from './components/filtro-ordenes/filtro-ordenes.component';
-import { ModalDetalleOrdenComponent } from './templates/modal-detalle-orden/modal-detalle-orden.component';
-import { OrdenTallerComponent } from './components/orden-taller/orden-taller.component';
-import { TablaDetalleOrdenesTallerComponent } from './components/tabla-detalle-ordenes-taller/tabla-detalle-ordenes-taller.component';
-import { FiltroTOTALVEHICULOSComponent } from './components/filtro-total-vehiculos/filtro-total-vehiculos.component';
+import { OrdenTallerAltComponent } from './components/orden-taller-alt/orden-taller-alt.component';
+
 
 
 
@@ -53,7 +56,8 @@ import { FiltroTOTALVEHICULOSComponent } from './components/filtro-total-vehicul
     ModalDetalleOrdenComponent,
     OrdenTallerComponent,
     TablaDetalleOrdenesTallerComponent,
-    FiltroTOTALVEHICULOSComponent,
+    FiltroTotalVehiculosComponent,
+    OrdenTallerAltComponent,
   ],
   imports: [
     BrowserModule,

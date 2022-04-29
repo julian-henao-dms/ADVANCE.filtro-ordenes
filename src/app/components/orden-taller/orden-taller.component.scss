@@ -12,4 +12,29 @@
 
 .detalle-orden li mat-icon {
     margin-right: 0.5em;
+    color: #2675bb;
+}
+
+.btn-orden-taller {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.alt-orden-taller mat-card mat-card-actions .btn-orden-taller {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-orden-taller button {
+    margin-top: 0.8em;
+}
+
+.estado-factura {
+    color: darkgreen;
+    font-weight: 500;
+}
+
+.main-orden-taller mat-card {
+    border-left: solid 10px #2675bb;
 }

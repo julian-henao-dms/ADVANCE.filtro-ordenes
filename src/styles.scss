@@ -18,3 +18,13 @@ mat-card {
     background-color: #2675bb;
     color: #fff;
 }
+
+// Styles orden taller
+.main-orden-taller mat-card {
+    border-left: solid 10px #2675bb;
+}
+
+.alt-orden-taller mat-card mat-card-actions .btn-orden-taller {
+    display: flex;
+    justify-content: flex-end;
+}

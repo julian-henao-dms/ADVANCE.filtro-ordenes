@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FiltroTOTALVEHICULOSComponent } from './filtro-total-vehiculos.component';
+import { FiltroTotalVehiculosComponent } from './filtro-total-vehiculos.component';
 
-describe('FiltroTOTALVEHICULOSComponent', () => {
-  let component: FiltroTOTALVEHICULOSComponent;
-  let fixture: ComponentFixture<FiltroTOTALVEHICULOSComponent>;
+describe('FiltroTotalVehiculosComponent', () => {
+  let component: FiltroTotalVehiculosComponent;
+  let fixture: ComponentFixture<FiltroTotalVehiculosComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FiltroTOTALVEHICULOSComponent ]
+      declarations: [ FiltroTotalVehiculosComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FiltroTOTALVEHICULOSComponent);
+    fixture = TestBed.createComponent(FiltroTotalVehiculosComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

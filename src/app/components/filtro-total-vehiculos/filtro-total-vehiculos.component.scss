@@ -8,8 +8,16 @@ mat-form-field {
 
 .content-filter-total {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.select-filtro-total,
+.filtro-rango-fechas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2em;
 }
 
 .filtro-total-vehiculos mat-expansion-panel {
@@ -35,18 +43,30 @@ mat-form-field {
     align-items: stretch;
 }
 
-form.ng-untouched.ng-pristine.ng-valid {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+// form.ng-untouched.ng-pristine.ng-valid {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+// }
+.btn-filtro-total {
+    background-color: #2675bb;
+    margin-top: 1.5em;
+    color: #fff;
 }
 
-.filtro-rango-fechas {
-    display: flex;
-    flex-direction: column;
-}
-
-.select-filtro-total {
-    display: flex;
-    flex-direction: column;
+@media (max-width: 800px) {
+    .content-filter-total {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .filtro-rango-fechas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .pickers-filtro {
+        display: flex;
+        flex-direction: column;
+    }
 }
