@@ -29,4 +29,6 @@ mat-card {
     justify-content: flex-end;
 }
 
-.main-btn-filtro-ordenes {}
+.modal-content div app-orden-taller mat-card mat-card-actions.mat-card-actions {
+    display: none;
+}
