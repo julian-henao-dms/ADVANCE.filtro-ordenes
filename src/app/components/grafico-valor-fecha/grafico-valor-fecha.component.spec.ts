@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { OrdenTallerAltComponent } from './orden-taller-alt.component';
+import { GraficoValorFechaComponent } from './grafico-valor-fecha.component';
 
-describe('OrdenTallerAltComponent', () => {
-  let component: OrdenTallerAltComponent;
-  let fixture: ComponentFixture<OrdenTallerAltComponent>;
+describe('GraficoValorFechaComponent', () => {
+  let component: GraficoValorFechaComponent;
+  let fixture: ComponentFixture<GraficoValorFechaComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ OrdenTallerAltComponent ]
+      declarations: [ GraficoValorFechaComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(OrdenTallerAltComponent);
+    fixture = TestBed.createComponent(GraficoValorFechaComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -11,7 +11,7 @@
 }
 
 .filtro-orden-taller mat-panel-title {
-    color: #1c1c6e;
+    color: #000a6f;
     font-size: 15px;
     font-weight: 600;
     text-transform: uppercase;
@@ -26,7 +26,7 @@
  ::-webkit-scrollbar {
     width: 8px;
     height: 8px;
-    background: rgb(138, 119, 213);
+    background: #779ed5;
     border-radius: 4px;
 }
 
@@ -45,14 +45,6 @@
 
 .content-right-table.b {
     width: 100%;
-}
-
-// div graficos
-.print-btn {
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
-    align-items: center;
 }
 
 //-------------------------------

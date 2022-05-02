@@ -37,7 +37,9 @@ import { MatTableModule } from '@angular/material/table';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatSelectModule } from '@angular/material/select';
-import { OrdenTallerAltComponent } from './components/orden-taller-alt/orden-taller-alt.component';
+import { GraficoValorFechaComponent } from './components/grafico-valor-fecha/grafico-valor-fecha.component';
+import { GraficoValorVehiculoComponent } from './components/grafico-valor-vehiculo/grafico-valor-vehiculo.component';
+
 
 
 
@@ -55,7 +57,8 @@ import { OrdenTallerAltComponent } from './components/orden-taller-alt/orden-tal
     OrdenTallerComponent,
     TablaDetalleOrdenesTallerComponent,
     FiltroTotalVehiculosComponent,
-    OrdenTallerAltComponent,
+    GraficoValorFechaComponent,
+    GraficoValorVehiculoComponent,
   ],
   imports: [
     BrowserModule,
