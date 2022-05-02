@@ -62,12 +62,6 @@ mat-form-field {
 }
 
 @media only screen and (min-width: 800) and (max-width: 1280px) {
-    // form.ng-untouched.ng-pristine.ng-valid {
-    //     display: flex;
-    //     justify-content: space-between;
-    //     align-items: center;
-    //     flex-direction: column;
-    // }
     .rango-fecha {
         display: flex;
         justify-content: space-between;
@@ -79,13 +73,39 @@ mat-form-field {
 @media (max-width: 800px) {
     .rango-fecha {
         display: flex;
-        align-items: center;
+        align-items: stretch;
         flex-direction: column;
     }
     .estado-factura {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: stretch;
         margin-top: 1.5em;
+    }
+    .rango-fecha mat-form-field {
+        max-width: 100%;
+    }
+    .estado-factura mat-form-field {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 640px) {
+    .rango-fecha {
+        display: flex;
+        align-items: stretch;
+        flex-direction: column;
+    }
+    .estado-factura {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        margin-top: 1.5em;
+    }
+    .rango-fecha mat-form-field {
+        max-width: 100%;
+    }
+    .estado-factura mat-form-field {
+        max-width: 100%;
     }
 }

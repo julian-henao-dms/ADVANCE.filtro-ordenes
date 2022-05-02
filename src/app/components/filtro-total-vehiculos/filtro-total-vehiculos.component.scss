@@ -46,16 +46,10 @@ mat-form-field {
 
 .mat-expansion-panel-content {
     display: flex;
-    /* overflow: visible; */
     flex-direction: column;
     align-items: stretch;
 }
 
-// form.ng-untouched.ng-pristine.ng-valid {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-// }
 .btn-filtro-total {
     background-color: #2675bb;
     margin-top: 1.5em;
@@ -74,13 +68,35 @@ mat-form-field {
         flex-wrap: wrap;
         justify-content: center;
     }
+    .select-filtro-total,
     .filtro-rango-fechas {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2em;
+    }
+}
+
+@media (max-width: 640px) {
+    .content-filter-total {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 2em;
     }
     .pickers-filtro {
         display: flex;
+        width: 100%;
         flex-direction: column;
+        align-items: stretch;
+    }
+    .select-filtro-total mat-form-field {
+        max-width: 100%;
+        margin-right: 0;
+        width: 100%;
+    }
+    .filtro-rango-fechas mat-form-field {
+        max-width: 100%;
+        margin-right: 0;
     }
 }
