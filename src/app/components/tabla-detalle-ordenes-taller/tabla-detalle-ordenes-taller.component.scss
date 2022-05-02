@@ -1,5 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
 table {
     width: 100%;
+    border-collapse: collapse;
+}
+
+.table {
+    width: 100%;
+    overflow-x: auto;
 }
 
 tr.mat-footer-row {
@@ -12,6 +22,7 @@ th.mat-header-cell {
     font-weight: 600;
     color: #1c1c6e;
     background: #fafafa;
+    padding-right: 0.2em;
 }
 
 td.mat-cell {

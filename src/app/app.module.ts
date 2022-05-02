@@ -16,8 +16,6 @@ import { OrdenTallerComponent } from './components/orden-taller/orden-taller.com
 import { TablaDetalleOrdenesTallerComponent } from './components/tabla-detalle-ordenes-taller/tabla-detalle-ordenes-taller.component';
 import { FiltroTotalVehiculosComponent } from './components/filtro-total-vehiculos/filtro-total-vehiculos.component';
 
-
-
 // Material
 
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -83,7 +81,8 @@ import { OrdenTallerAltComponent } from './components/orden-taller-alt/orden-tal
     MatTableModule,
     MatGridListModule,
     MatDialogModule,
-    MatSelectModule
+    MatSelectModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

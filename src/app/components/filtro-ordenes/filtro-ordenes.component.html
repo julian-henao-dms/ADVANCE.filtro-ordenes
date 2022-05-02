@@ -40,22 +40,24 @@
 
             <div class="content-filtro-orden">
                 <form action="">
-                    <mat-form-field>
-                        <mat-label>Estado Factura</mat-label>
-                        <mat-select>
-                            <mat-option>Ninguna</mat-option>
-                            <mat-option value="activa">Activa</mat-option>
-                            <mat-option value="fact-parcial">Facturación parcial</mat-option>
-                            <mat-option value="facturada">facturada</mat-option>
-                            <mat-option value="cerrada">Cerrada</mat-option>
-                        </mat-select>
-                    </mat-form-field>
-                    <button mat-raised-button class="btn-filtro-orden" aria-label="Filtrar ">
-                        <mat-icon>
-                            manage_search
-                           </mat-icon>
-                           Filtrar 
-                         </button>
+                    <div class="estado-factura">
+                        <mat-form-field>
+                            <mat-label>Estado Factura</mat-label>
+                            <mat-select>
+                                <mat-option>Ninguna</mat-option>
+                                <mat-option value="activa">Activa</mat-option>
+                                <mat-option value="fact-parcial">Facturación parcial</mat-option>
+                                <mat-option value="facturada">facturada</mat-option>
+                                <mat-option value="cerrada">Cerrada</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                        <button mat-raised-button class="btn-filtro-orden" aria-label="Filtrar ">
+                    <mat-icon>
+                        manage_search
+                       </mat-icon>
+                       Filtrar 
+                     </button>
+                    </div>
                 </form>
             </div>
             <div class="content-filtro-orden">
@@ -64,14 +66,14 @@
                         <mat-icon>
                             manage_search
                            </mat-icon>
-                           Filtrar 
+                           Listar todas las ordenes 
                         
                          </button>
                     <button (click)="openDialog()" mat-raised-button class="btn-filtro-orden" primary aria-label="Filtrar ">
                         <mat-icon>
-                            manage_search
+                            find_in_page
                            </mat-icon>
-                           Filtrar 
+                           Ver más detalles ordenes de taller 
                         
                              </button>
 

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { MatSort } from '@angular/material/sort';
 interface DetalleTabla {
   descripcion: string;
   cantidad: number,
@@ -25,7 +26,10 @@ export class TablaDetalleOrdenesTallerComponent implements OnInit {
   ];
   constructor() { }
 
-  ngOnInit(): void {
+
+
+  ngOnInit() {
+    
   }
   /** Gets the total cost of all transactions. */
   getTotalCost() {

@@ -29,12 +29,6 @@ mat-form-field {
     align-items: stretch;
 }
 
-form.ng-untouched.ng-pristine.ng-valid {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .rango-fecha {
     display: flex;
     justify-content: space-between;
@@ -60,5 +54,19 @@ form.ng-untouched.ng-pristine.ng-valid {
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
+    }
+}
+
+@media (max-width: 800px) {
+    .rango-fecha {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .estado-factura {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1.5em;
     }
 }
