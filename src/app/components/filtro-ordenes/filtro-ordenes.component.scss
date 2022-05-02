@@ -24,16 +24,29 @@ mat-form-field {
 
 .mat-expansion-panel-content {
     display: flex;
-    /* overflow: visible; */
     flex-direction: column;
     align-items: stretch;
 }
 
 .rango-fecha {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.rango-fecha mat-form-field {
+    max-width: 9em;
+}
+
+.estado-factura mat-form-field {
+    max-width: 10em;
+}
+
+.estado-factura {
+    display: flex;
+    justify-content: space-around;
+    margin: 1.5em 0;
 }
 
 .btns-filtro {
@@ -48,12 +61,18 @@ mat-form-field {
     color: white;
 }
 
-@media (max-width: 800) and (min-width: 1280px) {
-    form.ng-untouched.ng-pristine.ng-valid[_ngcontent-itg-c184] {
+@media only screen and (min-width: 800) and (max-width: 1280px) {
+    // form.ng-untouched.ng-pristine.ng-valid {
+    //     display: flex;
+    //     justify-content: space-between;
+    //     align-items: center;
+    //     flex-direction: column;
+    // }
+    .rango-fecha {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        flex-direction: column;
+        flex-wrap: wrap;
     }
 }
 
